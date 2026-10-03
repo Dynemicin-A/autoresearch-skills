@@ -1,4 +1,4 @@
 interface:
-  display_name: "AutoResearch Harbor Submission"
-  short_description: "Run, audit, and safely submit Harbor research tasks"
-  default_prompt: "Use $autoresearch-harbor-submission to prepare, run, audit, and safely submit this Harbor-style AutoResearch task. Keep the research Agents independent and prove effective time before submission."
+  display_name: "AutoResearch Paper-to-Harbor"
+  short_description: "Turn paper tasks into runnable Harbor research submissions"
+  default_prompt: "Use $autoresearch-harbor-submission to turn this paper-only or claimed task into a narrow runnable benchmark, run and audit independent research Agents, verify effective time and acceptance, package the evidence, and safely submit it. Keep protected Feishu fields unchanged and keep Agents independent."
