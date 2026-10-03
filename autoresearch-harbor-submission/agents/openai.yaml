@@ -1,0 +1,4 @@
+interface:
+  display_name: "AutoResearch Harbor Submission"
+  short_description: "Run, audit, and safely submit Harbor research tasks"
+  default_prompt: "Use $autoresearch-harbor-submission to prepare, run, audit, and safely submit this Harbor-style AutoResearch task. Keep the research Agents independent and prove effective time before submission."
