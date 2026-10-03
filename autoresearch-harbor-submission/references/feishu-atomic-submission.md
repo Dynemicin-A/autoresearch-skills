@@ -14,7 +14,7 @@ Use the user identity (`--as user`) for a Base operation unless the live task ex
 
 ## Field ownership boundary
 
-Populate only fields owned by the submitting expert and supported by the evidence: method/optimization description, baseline and reference descriptions, small-scale trial conclusion, machine-check artifact, research subdirection, rebuttal notes, scores, checklist, and the required submission attachments. Preserve project-managed workflow fields exactly as read, including incentive fields (`一次成功激励`, `出题大户激励`, `快鸟激励`), quality-control fields (`质检人`, `质检状态`, `质检结论`), repair status (`是否有返修`), approval/assignment fields, and duplicate/backup attachment fields unless the live contract explicitly assigns them to the submitter. An empty project-managed field is not a reason to write a guessed value.
+Populate only fields owned by the submitting expert and supported by the evidence: optimization description, baseline and reference descriptions, small-scale trial conclusion, research subdirection, and any other fields explicitly assigned to the expert. Preserve project-managed or protected fields exactly as read, including `机检产物`, `备注（rebuttal）`, incentive fields (`一次成功激励`, `出题大户激励`, `快鸟激励`), quality-control fields (`质检人`, `质检状态`, `质检结论`), repair status (`是否有返修`), approval/assignment fields, scores/checklists when the live contract marks them as protected, and duplicate/backup attachment fields. An empty protected field is not a reason to write a guessed value.
 
 ## Small-scale-trial field
 
