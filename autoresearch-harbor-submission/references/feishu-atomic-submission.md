@@ -12,6 +12,10 @@ Use the user identity (`--as user`) for a Base operation unless the live task ex
 6. Only after all three readbacks, QA, and the row comparison pass, update the completion field. For a single-select field, use the live field's native value shape; a direct native PUT commonly expects a scalar option string even when a normalized read displays a one-element array.
 7. Read the row back one final time and archive the response. If any write or readback is ambiguous, stop and inspect the live row before retrying.
 
+## Field ownership boundary
+
+Populate only fields owned by the submitting expert and supported by the evidence: method/optimization description, baseline and reference descriptions, small-scale trial conclusion, machine-check artifact, research subdirection, rebuttal notes, scores, checklist, and the required submission attachments. Preserve project-managed workflow fields exactly as read, including incentive fields (`一次成功激励`, `出题大户激励`, `快鸟激励`), quality-control fields (`质检人`, `质检状态`, `质检结论`), repair status (`是否有返修`), approval/assignment fields, and duplicate/backup attachment fields unless the live contract explicitly assigns them to the submitter. An empty project-managed field is not a reason to write a guessed value.
+
 ## Small-scale-trial field
 
 Treat `小规模试跑结论` as an explicit release field whenever it exists. It is often a plain text field and may be null even when engineering smoke or calibration artifacts exist. Before final submission, decide whether the live contract requires a concise real-asset pilot conclusion, an explicitly labeled engineering-only smoke conclusion, or a truthful `未完成/不适用` value. Never promote `SMOKE_ONLY`, synthetic diagnostics, or an internal calibration result to a formal research result without stating its scope. If the field is not required, preserve its null value and record that decision in the local final audit.
